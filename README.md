@@ -18,3 +18,9 @@ Centralizamos a configuração do endereço da API utilizando o arquivo de envir
 Como criar uma página utilizando diversos componentes reutilizáveis utilizando a composição.
 Aprendemos a utilizar o operador switchMap para concatenar dois fluxos de informações e não realizar um subscribe dentro de outro subscribe.
 Aprendemos a utilizar guarda de rotas para controlar o fluxo de navegação do usuário em nossa aplicação.
+
+# sessao 3 Detalhe do Animal
+
+Como parametrizar a rota da aplicação e utilizar essa informação com o serviço ActivatedRoute
+Aprendemos como anexar o token a todas as requisições ao backend criando um serviço do tipo Interceptor
+Criamos as funções de curtir e excluir e aprendemos mais sobre os operadores mapTo e catchError

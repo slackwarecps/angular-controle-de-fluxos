@@ -7,7 +7,6 @@ import { TokenService } from '../autenticacao/token.service';
 import { Animais, Animal } from './animais';
 
 const API = environment.apiURL;
-
 const NOT_MODIFIED = '304';
 
 @Injectable({
@@ -20,7 +19,7 @@ export class AnimaisService {
     return this.http.get<Animais>(`${API}/${nomeDoUsuario}/photos`);
   }
 
-  buscaPorId(id: number): Observable<Animal> {
+  buscaPorID(id: number): Observable<Animal> {
     return this.http.get<Animal>(`${API}/photos/${id}`);
   }
 
