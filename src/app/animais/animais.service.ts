@@ -28,11 +28,13 @@ export class AnimaisService {
   }
 
   curtir(id: number): Observable<boolean> {
-    return this.http.post(`${API}/photos/${id}/like`, {}, { observe: 'response' }).pipe(
-      mapTo(true),
-      catchError((error) => {
-        return error.status === NOT_MODIFIED ? of(false) : throwError(error);
-      })
-    );
+    return this.http
+      .post(`${API}/photos/${id}/like`, {}, { observe: 'response' })
+      .pipe(
+        mapTo(true),
+        catchError((error) => {
+          return error.status === NOT_MODIFIED ? of(false) : throwError(error);
+        })
+      );
   }
 }
