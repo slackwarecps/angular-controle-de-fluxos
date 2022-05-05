@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 import {
   HttpRequest,
   HttpHandler,
@@ -14,7 +13,10 @@ import { TokenService } from './token.service';
 export class AutenticacaoInterceptor implements HttpInterceptor {
   constructor(private tokenService: TokenService) {}
 
-  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
+  intercept(
+    request: HttpRequest<unknown>,
+    next: HttpHandler
+  ): Observable<HttpEvent<unknown>> {
     if (this.tokenService.possuiToken()) {
       const token = this.tokenService.retornaToken();
       const headers = new HttpHeaders().append('x-access-token', token);

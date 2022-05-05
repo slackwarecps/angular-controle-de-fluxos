@@ -1,5 +1,5 @@
-import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import { UsuarioService } from 'src/app/autenticacao/usuario/usuario.service';
@@ -12,7 +12,7 @@ import { AnimaisService } from '../animais.service';
   styleUrls: ['./lista-animais.component.css'],
 })
 export class ListaAnimaisComponent implements OnInit {
-  animais!: Observable<Animais>;
+  animais!: Animais;
 
   constructor(private activatedRoute: ActivatedRoute) {}
 
