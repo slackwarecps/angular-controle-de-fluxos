@@ -19,7 +19,7 @@
       </div>
       <app-mensagem
         mensagem="Tamanho maximo de 300 caracteres"
-        *ngIf="!!comentarioForm.get('comentario')?.errors?maxlenth"
+        *ngIf=" !!comentarioForm.get('comentario')?.errors?maxLength"
       ></app-mensagem>
     </form>
   </div>
