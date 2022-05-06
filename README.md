@@ -30,3 +30,14 @@ Criamos as funções de curtir e excluir e aprendemos mais sobre os operadores m
 Como carregar informações do servidor enquanto a rota é carregada utilizando o serviço do tipo Resolver
 Criamos o componente de comentários e anexamos ele ao nosso componente de detalhe do animal
 Aprendemos a como resetar o formulário após a requisição utilizando o operador tap
+
+# INSTRUCOES FINAIS
+
+Como criar CSS para um componente específico, criando a animação do Menu da aplicação
+Criamos um serviço de upload e aprendemos como enviar uma foto para nosso backend
+Aprendemos a utilizar o HttpClient do Angular para monitorar o progresso da operação de upload.
+Como criar o pacote do nosso projeto de front-end para ser enviado para a produção através do comando ng build.
+
+# DEPLOY
+
+$ ng build --prod
